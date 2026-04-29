@@ -7,42 +7,42 @@
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="branding">
-      <div class="logo" aria-hidden="true">AF</div>
+  <header class="header">
+    <div class="header__branding">
+      <div class="header__logo" aria-hidden="true">AF</div>
       <div>
-        <p class="logo-text">Agência Flexível</p>
-        <p class="logo-subtitle">Criatividade e estratégia para marcas modernas</p>
+        <p class="header__logo-text">Agência Flexível</p>
+        <p class="header__logo-subtitle">Criatividade e estratégia para marcas modernas</p>
       </div>
     </div>
 
     <input type="checkbox" id="nav-toggle" />
-    <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+    <label for="nav-toggle" class="header__nav-toggle" aria-label="Abrir menu">
       <span></span>
       <span></span>
       <span></span>
     </label>
 
-    <nav class="site-nav" aria-label="Menu principal">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <nav class="nav" aria-label="Menu principal">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre Nós</a></li>
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">Bem-vindo</span>
-        <h1>Transformamos ideias em identidade digital eficiente.</h1>
-        <p>Somos uma agência especializada em design, desenvolvimento web e branding, com soluções pensadas para marcas que querem crescer com personalidade.</p>
+  <main class="main">
+    <section id="home" class="hero section">
+      <div class="hero__copy">
+        <span class="hero__eyebrow">Bem-vindo</span>
+        <h1 class="hero__title">Transformamos ideias em identidade digital eficiente.</h1>
+        <p class="hero__description">Somos uma agência especializada em design, desenvolvimento web e branding, com soluções pensadas para marcas que querem crescer com personalidade.</p>
         <a class="button" href="#contato">Converse com a equipe</a>
       </div>
-      <div class="hero-image">
+      <div class="hero__image">
         <img
           src="images/banner-1200.svg"
           srcset="images/banner-600.svg 600w, images/banner-1200.svg 1200w"
@@ -52,98 +52,98 @@
       </div>
     </section>
 
-    <section id="sobre" class="section sobre">
-      <div class="section-header">
-        <span>Quem somos</span>
-        <h2>Uma agência que une estratégia, design e tecnologia.</h2>
+    <section id="sobre" class="section">
+      <div class="section__header">
+        <span class="section__eyebrow">Quem somos</span>
+        <h2 class="section__title">Uma agência que une estratégia, design e tecnologia.</h2>
       </div>
-      <p class="section-text">Com foco em resultados e experiência, nossa equipe cria projetos que conectam marcas ao público certo. Valorizamos transparência, inovação e um atendimento próximo para entregar soluções relevantes.</p>
-      <div class="valores-grid">
-        <article>
-          <h3>Visão</h3>
+      <p class="section__text">Com foco em resultados e experiência, nossa equipe cria projetos que conectam marcas ao público certo. Valorizamos transparência, inovação e um atendimento próximo para entregar soluções relevantes.</p>
+      <div class="grid grid--3-cols">
+        <article class="card">
+          <h3 class="card__title">Visão</h3>
           <p>Crescer com responsabilidade e desenvolver trabalhos que façam a diferença no mercado.</p>
         </article>
-        <article>
-          <h3>Missão</h3>
+        <article class="card">
+          <h3 class="card__title">Missão</h3>
           <p>Entregar soluções digitais estratégicas que traduzam a essência da marca em cada ponto de contato.</p>
         </article>
-        <article>
-          <h3>Valores</h3>
+        <article class="card">
+          <h3 class="card__title">Valores</h3>
           <p>Colaboração, criatividade, transparência e inovação são a base do nosso processo criativo.</p>
         </article>
       </div>
     </section>
 
-    <section id="servicos" class="section servicos">
-      <div class="section-header">
-        <span>O que fazemos</span>
-        <h2>Serviços pensados para fortalecer a sua presença digital.</h2>
+    <section id="servicos" class="section">
+      <div class="section__header">
+        <span class="section__eyebrow">O que fazemos</span>
+        <h2 class="section__title">Serviços pensados para fortalecer a sua presença digital.</h2>
       </div>
-      <p class="section-text">Escolha as soluções que melhor se encaixam no seu projeto e deixe a execução com quem entende do assunto.</p>
-      <div class="servico-grid">
-        <article>
-          <h3>Design Gráfico</h3>
+      <p class="section__text">Escolha as soluções que melhor se encaixam no seu projeto e deixe a execução com quem entende do assunto.</p>
+      <div class="grid grid--2-cols">
+        <article class="card">
+          <h3 class="card__title">Design Gráfico</h3>
           <p>Identidade visual, materiais impressos e peças digitais com acabamento premium.</p>
         </article>
-        <article>
-          <h3>Desenvolvimento Web</h3>
+        <article class="card">
+          <h3 class="card__title">Desenvolvimento Web</h3>
           <p>Sites institucionais, lojas online e landing pages com performance e usabilidade.</p>
         </article>
-        <article>
-          <h3>Branding</h3>
+        <article class="card">
+          <h3 class="card__title">Branding</h3>
           <p>Posicionamento de marca, naming e linguagem visual para criar conexões reais.</p>
         </article>
-        <article>
-          <h3>Marketing Digital</h3>
+        <article class="card">
+          <h3 class="card__title">Marketing Digital</h3>
           <p>Planejamento e campanhas que ampliam visibilidade e geram leads qualificados.</p>
         </article>
       </div>
     </section>
 
-    <section id="depoimentos" class="section depoimentos">
-      <div class="section-header">
-        <span>Clientes satisfeitos</span>
-        <h2>Depoimentos que comprovam a qualidade do nosso trabalho.</h2>
+    <section id="depoimentos" class="section">
+      <div class="section__header">
+        <span class="section__eyebrow">Clientes satisfeitos</span>
+        <h2 class="section__title">Depoimentos que comprovam a qualidade do nosso trabalho.</h2>
       </div>
-      <div class="depoimentos-grid">
-        <article>
-          <p>“A Agência Flexível renovou nossa identidade visual com um projeto elegante e estratégico. O resultado superou nossas expectativas.”</p>
-          <strong>— Marina Lopes, CEO da Ria Comunicação</strong>
+      <div class="grid grid--3-cols">
+        <article class="testimonial">
+          <p class="testimonial__quote">"A Agência Flexível renovou nossa identidade visual com um projeto elegante e estratégico. O resultado superou nossas expectativas."</p>
+          <strong class="testimonial__author">— Marina Lopes, CEO da Ria Comunicação</strong>
         </article>
-        <article>
-          <p>“O site ficou moderno, leve e fácil de navegar. A entrega foi rápida e a equipe acompanhou cada etapa com muito profissionalismo.”</p>
-          <strong>— Carlos Melo, fundador da ConectaTech</strong>
+        <article class="testimonial">
+          <p class="testimonial__quote">"O site ficou moderno, leve e fácil de navegar. A entrega foi rápida e a equipe acompanhou cada etapa com muito profissionalismo."</p>
+          <strong class="testimonial__author">— Carlos Melo, fundador da ConectaTech</strong>
         </article>
-        <article>
-          <p>“A comunicação visual da nossa marca ganhou consistência e personalidade. Recebemos ótimos feedbacks desde o lançamento.”</p>
-          <strong>— Gabriela Silva, gestora da Vivofera</strong>
+        <article class="testimonial">
+          <p class="testimonial__quote">"A comunicação visual da nossa marca ganhou consistência e personalidade. Recebemos ótimos feedbacks desde o lançamento."</p>
+          <strong class="testimonial__author">— Gabriela Silva, gestora da Vivofera</strong>
         </article>
       </div>
     </section>
 
-    <section id="contato" class="section contato">
-      <div class="section-header">
-        <span>Fale conosco</span>
-        <h2>Pronto para transformar sua presença digital?</h2>
+    <section id="contato" class="section">
+      <div class="section__header">
+        <span class="section__eyebrow">Fale conosco</span>
+        <h2 class="section__title">Pronto para transformar sua presença digital?</h2>
       </div>
-      <div class="contato-grid">
-        <div class="contato-info">
+      <div class="grid grid--contact">
+        <div class="contact-info">
           <p>Endereço: Rua da Inovação, 210, São Paulo, SP</p>
           <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
           <p>E-mail: <a href="mailto:contato@agenciaflexivel.com.br">contato@agenciaflexivel.com.br</a></p>
           <p>Atendimento: segunda a sexta-feira, das 9h às 18h.</p>
         </div>
-        <form class="contato-form">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+        <form class="form">
+          <label for="nome" class="form__label">Nome</label>
+          <input type="text" id="nome" name="nome" class="form__input" placeholder="Seu nome" required />
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required />
+          <label for="email" class="form__label">E-mail</label>
+          <input type="email" id="email" name="email" class="form__input" placeholder="seu@exemplo.com" required />
 
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem" required></textarea>
+          <label for="mensagem" class="form__label">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" class="form__textarea" rows="6" placeholder="Escreva sua mensagem" required></textarea>
 
-          <button type="submit">Enviar mensagem</button>
+          <button type="submit" class="form__button">Enviar mensagem</button>
         </form>
       </div>
     </section>
