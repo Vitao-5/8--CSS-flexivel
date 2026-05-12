@@ -1,0 +1,128 @@
+// Estrutura geral da página: header, main, footer
+
+// Header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: $padding-header;
+  position: sticky;
+  top: 0;
+  background: rgba($bg, 0.92);
+  backdrop-filter: blur(12px);
+  z-index: 10;
+
+  &__branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__logo {
+    width: $logo-size;
+    height: $logo-size;
+    border-radius: 1rem;
+    @include gradient-bg();
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    color: #0b1120;
+    font-size: 1.25rem;
+  }
+
+  &__logo-text {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &__logo-subtitle {
+    color: $muted;
+    font-size: 0.95rem;
+  }
+
+  &__nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+
+    span {
+      height: 0.2rem;
+      width: 100%;
+      border-radius: 999px;
+      background: $text;
+    }
+  }
+}
+
+// Nav
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $nav-gap;
+    list-style: none;
+  }
+
+  &__link {
+    color: $text;
+    font-weight: 500;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $secondary;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// Main
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-main;
+  padding: 0 3rem 3rem;
+}
+
+// Section
+.section {
+  padding: $padding-section;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 52rem;
+  }
+
+  &__eyebrow {
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.82rem;
+  }
+
+  &__title {
+    font-size: clamp(2rem, 2.4vw, 3rem);
+    line-height: 1.05;
+  }
+
+  &__text {
+    margin-top: 1.2rem;
+    max-width: 52rem;
+    color: $muted;
+    font-size: 1rem;
+  }
+}
+
+// Footer
+.footer {
+  padding: 1.75rem 3rem;
+  text-align: center;
+  color: $muted;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}

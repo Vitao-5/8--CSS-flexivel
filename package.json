@@ -1,0 +1,12 @@
+{
+  "name": "css-flexivel",
+  "version": "1.0.0",
+  "description": "Projeto CSS Flexível com SASS",
+  "scripts": {
+    "build": "sass scss/estilos.scss css/estilos.css --style=compressed",
+    "watch": "sass --watch scss/estilos.scss css/estilos.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

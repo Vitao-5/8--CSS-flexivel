@@ -1,0 +1,44 @@
+// Mixins reutilizáveis
+
+// Mixin para espaçamentos padrão
+@mixin spacing($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: $top $right $bottom $left;
+}
+
+// Mixin para espaçamento vertical
+@mixin spacing-vertical($multiplier: 1) {
+  margin-bottom: $espacamento-base * $multiplier;
+}
+
+// Mixin para botão básico
+@mixin button-base($bg: $primary, $color: #0b1120) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $button-padding;
+  border-radius: 999px;
+  background: $bg;
+  color: $color;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px rgba($primary, 0.16);
+  }
+}
+
+// Mixin para gradiente de fundo
+@mixin gradient-bg($color1: $primary, $color2: $secondary) {
+  background: linear-gradient(135deg, $color1, $color2);
+}
+
+// Mixin para card base
+@mixin card-base {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: $padding-card;
+}

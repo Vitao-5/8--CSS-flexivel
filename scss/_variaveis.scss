@@ -1,0 +1,35 @@
+// Variáveis SASS para cores, espaçamentos, fontes e tamanhos
+
+// Cores
+$bg: #0f172a;
+$surface: #111827;
+$surface-alt: #1f2937;
+$primary: #5b82ff;
+$secondary: #85c1ff;
+$accent: #fbbf24;
+$text: #e2e8f0;
+$muted: #94a3b8;
+$border: rgba(148, 163, 184, 0.16);
+
+// Espaçamentos
+$radius: 1.2rem;
+$padding-header: 1.5rem 3rem;
+$gap-main: 4rem;
+$padding-section: 2rem 0;
+$gap-grid: 1.5rem;
+$padding-card: 1.75rem;
+
+// Calculando espaçamentos proporcionais
+$espacamento-base: 1rem;
+$espacamento-medio: $espacamento-base * 1.5; // 1.5rem
+$espacamento-grande: $espacamento-base * 2; // 2rem
+
+// Fontes
+$font-family: "Inter", "Segoe UI", sans-serif;
+$font-size-base: 100%;
+
+// Tamanhos
+$logo-size: 3.2rem;
+$nav-gap: 1.8rem;
+$hero-gap: 2rem;
+$button-padding: 1rem 1.8rem;

@@ -1,0 +1,8 @@
+// Arquivo principal que importa os demais com @use
+
+@use 'variaveis';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'componentes';
+@use 'responsive';

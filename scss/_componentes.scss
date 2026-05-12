@@ -1,0 +1,163 @@
+// Componentes: botões, cards, menus, etc.
+
+// Hero
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: $hero-gap;
+  padding: 3.5rem 0;
+
+  &__copy {
+    max-width: 42rem;
+  }
+
+  &__eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.85rem;
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    line-height: 0.98;
+  }
+
+  &__description {
+    margin-top: $espacamento-grande;
+    color: $muted;
+    font-size: 1.05rem;
+  }
+
+  &__image {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 2rem;
+      background: radial-gradient(circle at top left, rgba($primary, 0.18), transparent 34%);
+    }
+
+    img {
+      position: relative;
+      border-radius: 2rem;
+      box-shadow: 0 34px 80px rgba(5, 10, 22, 0.35);
+    }
+  }
+}
+
+// Button
+.button {
+  @include button-base();
+  margin-top: 2rem;
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: $gap-grid;
+
+  &--3-cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  &--2-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  &--contact {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
+
+// Card
+.card {
+  @include card-base();
+
+  &__title {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    color: $muted;
+    line-height: 1.7;
+  }
+}
+
+// Testimonial
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  @include card-base();
+
+  &__quote {
+    font-size: 1rem;
+    color: $text;
+  }
+
+  &__author {
+    color: $secondary;
+    font-size: 0.95rem;
+  }
+}
+
+// Contact Info
+.contact-info {
+  p,
+  a {
+    color: $muted;
+    line-height: 1.8;
+  }
+
+  a {
+    &:hover,
+    &:focus-visible {
+      color: $secondary;
+    }
+  }
+}
+
+// Form
+.form {
+  display: grid;
+  gap: 1rem;
+
+  &__label {
+    font-weight: 600;
+    color: $text;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+    color: $text;
+
+    &::placeholder {
+      color: $muted;
+    }
+  }
+
+  &__button {
+    margin-top: 0.75rem;
+    padding: 1rem 1.4rem;
+    border: none;
+    border-radius: 999px;
+    @include gradient-bg();
+    color: #0b1120;
+    font-weight: 700;
+  }
+}
